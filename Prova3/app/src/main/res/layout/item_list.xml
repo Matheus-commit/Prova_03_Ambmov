@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/image_artist"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/name_artist"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Galilei"
+        android:layout_toRightOf="@id/image_artist"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/roboto_black"/>
+
+    <TextView
+        android:id="@+id/name_music"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arashi no Atode"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_toRightOf="@id/image_artist"
+        android:layout_below="@+id/name_artist"/>
+
+</RelativeLayout>
